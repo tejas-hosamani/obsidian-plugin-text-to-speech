@@ -9,7 +9,7 @@ Sample: <br >
 
 <audio controls>
   <source src="./sample/sample.wav" type="audio/wav">
-  Your browser does not support the audio tag.
+  Your browser does not support the audio tag. Try <a href="/sample/sample.wav">Sample audio</a>
 </audio>
 
 ## Get Started - Quick
