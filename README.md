@@ -31,6 +31,8 @@ Download and setup language audio models -
 3. Select these files from the Obsidian plugin settings
 
 Step 3:
+Run the `Convert text to speech` command to convert
+![alt text](sample/image.png)
 That's it! Start using the plugin!
 
 
