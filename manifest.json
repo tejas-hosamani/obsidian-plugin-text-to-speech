@@ -1,11 +1,11 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "listen-up",
+	"name": "Listen Up!",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": false
+	"description": "A FREE and Open source Obsidian plugin to covert text to natural speech LOCALLY - Listen Up!",
+	"author": "Tejas H",
+	"authorUrl": "https://internetunexplorer.com/",
+	"fundingUrl": "https://internetunexplorer.com/",
+	"isDesktopOnly": true
 }
