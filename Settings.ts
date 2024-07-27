@@ -9,10 +9,10 @@ export interface ListenUpSettingsTab {
 }
 
 export const DEFAULT_SETTINGS: ListenUpSettingsTab = {
-	customModelFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/default-lang-model/en_US-danny-low.onnx"),
-	customModelConfigFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/default-lang-model/en_US-danny-low.onnx.json"),
+	customModelFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/en_US-danny-low.onnx"),
+	customModelConfigFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/en_US-danny-low.onnx.json"),
 	piperExecutableFilePath: "",
-	shouldUseCustomModel: false,
+	shouldUseCustomModel: true,
 };
 
 export class SettingsTab extends PluginSettingTab {
@@ -28,11 +28,11 @@ export class SettingsTab extends PluginSettingTab {
 		containerEl.empty();
 
 		this.addSettingToSelectPiperExecutablePath(containerEl);
-		this.addSettingsToChooseWhetherToUseCustomModelOrDefault(containerEl);
-		if (this.plugin.settings.shouldUseCustomModel) {
+		// this.addSettingsToChooseWhetherToUseCustomModelOrDefault(containerEl);
+		// if (this.plugin.settings.shouldUseCustomModel) {
 			this.addSettingToSelectModelFilePath(containerEl);
 			this.addSettingToSelectModelConfigFilePath(containerEl);
-		}
+		// }
 	}
 
 	addSettingToSelectModelFilePath(containerEl: HTMLElement) {

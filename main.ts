@@ -40,10 +40,10 @@ export default class ListenUp extends Plugin {
 
 				const outputFilePath = normalizePath(basePath + '/' + audioFileName)
 
-				if (this.settings.shouldUseCustomModel) {
+				// if (this.settings.shouldUseCustomModel) {
 					modelPath = normalizePath(this.settings.customModelFilePath);
 					modelConfigPath = normalizePath(this.settings.customModelConfigFilePath);
-				}
+				// }
 
 				const piperCommand = `${piperLocation} --model ${modelPath} --config ${modelConfigPath} --output_file ${outputFilePath} --sentence_silence 0.5 --length_scale 1`;
 
