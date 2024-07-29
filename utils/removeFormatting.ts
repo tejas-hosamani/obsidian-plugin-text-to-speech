@@ -8,7 +8,7 @@ export function removeAllFormatting(md: string, options: Record<string, string>)
 	options.replaceLinksWithURL = options.hasOwnProperty('replaceLinksWithURL') ? options.replaceLinksWithURL : false;
 	options.htmlTagsToSkip = options.hasOwnProperty('htmlTagsToSkip') ? options.htmlTagsToSkip : [];
 
-	var output = md || '';
+	let output = md || '';
 
 	// Remove horizontal rules (stripListHeaders conflict with this rule, which is why it has been moved to the top)
 	output = output.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, '');
@@ -39,10 +39,10 @@ export function removeAllFormatting(md: string, options: Record<string, string>)
 			// Remove HTML tags
 			.replace(/<[^>]*>/g, '')
 
-		var htmlReplaceRegex = new RegExp('<[^>]*>', 'g');
+		let htmlReplaceRegex = new RegExp('<[^>]*>', 'g');
 		if (options.htmlTagsToSkip.length > 0) {
 			// Using negative lookahead. Eg. (?!sup|sub) will not match 'sup' and 'sub' tags.
-			var joinedHtmlTagsToSkip = '(?!' + options.htmlTagsToSkip.join("|") + ')';
+			const joinedHtmlTagsToSkip = '(?!' + options.htmlTagsToSkip.join("|") + ')';
 
 			// Adding the lookahead literal with the default regex for html. Eg./<(?!sup|sub)[^>]*>/ig
 			htmlReplaceRegex = new RegExp(
