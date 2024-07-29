@@ -9,8 +9,8 @@ export interface ListenUpSettingsTab {
 }
 
 export const DEFAULT_SETTINGS: ListenUpSettingsTab = {
-	customModelFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/en_US-danny-low.onnx"),
-	customModelConfigFilePath: normalizePath("/.obsidian/plugins/obsidian-plugin-text-to-speech/en_US-danny-low.onnx.json"),
+	customModelFilePath: "",
+	customModelConfigFilePath: "",
 	piperExecutableFilePath: "",
 	shouldUseCustomModel: true,
 };
