@@ -17,7 +17,7 @@ export default class ListenUp extends Plugin {
 
 		this.addCommand({
 			id: "convert-text-to-speech",
-			name: "Convert Text to Speech",
+			name: "Convert text to speech",
 			editorCallback: async (editor, _) => {
 				const notice = new Notice(
 					"Converting the text to natural speech, please wait..",

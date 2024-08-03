@@ -67,7 +67,7 @@ export class SettingsTab extends PluginSettingTab {
 
 	addSettingToSelectModelConfigFilePath(containerEl: HTMLElement) {
 		new Setting(containerEl)
-			.setName("Select Model config file")
+			.setName("Select model config file")
 			.setDesc(`Make sure to add config file if you are using custom model`)
 			.addText((component) => {
 				component.setDisabled(true);
