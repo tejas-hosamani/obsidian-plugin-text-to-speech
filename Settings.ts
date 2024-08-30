@@ -38,7 +38,7 @@ export class SettingsTab extends PluginSettingTab {
 	addSettingToSelectModelFilePath(containerEl: HTMLElement) {
 		new Setting(containerEl)
 			.setName("Select custom model file")
-			.setDesc(`Leave this empty to use the default model that comes with this plugin`)
+			.setDesc(`File that ends with .onnx`)
 			.addText((component) => {
 				component.setDisabled(true);
 				component.setValue(this.plugin.settings.customModelFilePath);
@@ -68,7 +68,7 @@ export class SettingsTab extends PluginSettingTab {
 	addSettingToSelectModelConfigFilePath(containerEl: HTMLElement) {
 		new Setting(containerEl)
 			.setName("Select model config file")
-			.setDesc(`Make sure to add config file if you are using custom model`)
+			.setDesc(`File that ends with .json`)
 			.addText((component) => {
 				component.setDisabled(true);
 				component.setValue(this.plugin.settings.customModelConfigFilePath);

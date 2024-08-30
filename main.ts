@@ -45,7 +45,7 @@ export default class ListenUp extends Plugin {
 					modelConfigPath = normalizePath(this.settings.customModelConfigFilePath);
 				// }
 
-				const piperCommand = `${piperLocation} --model ${modelPath} --config ${modelConfigPath} --output_file ${outputFilePath} --sentence_silence 0.5 --length_scale 1`;
+				const piperCommand = `"${piperLocation}" --model "${modelPath}" --config "${modelConfigPath}" --output_file "${outputFilePath}" --sentence_silence 0.5 --length_scale 1`;
 
 				let textToConvertToAudio = editor.getValue();
 				const regExMatch = textToConvertToAudio.match(

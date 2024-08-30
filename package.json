@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "obsidian-plugin-convert-text-to-natural-speech",
 	"version": "1.0.5",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "To convert text to natural speech",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
