@@ -1,0 +1,16 @@
+{
+  "customModelFilePath": "C:\\Users\\feder\\Documents\\My Knowledge\\hub\\TTS\\piper\\en_US-lessac-high.onnx",
+  "customModelConfigFilePath": "C:\\Users\\feder\\Documents\\My Knowledge\\hub\\TTS\\piper\\en_US-lessac-high.onnx.json",
+  "piperExecutableFilePath": "C:\\Users\\feder\\Documents\\My Knowledge\\hub\\TTS\\piper\\piper.exe",
+  "shouldUseCustomModel": true,
+  "removeHighlights": true,
+  "removeInserts": true,
+  "removeComments": true,
+  "removeAngleBrackets": true,
+  "removeParentheses": true,
+  "removeCurlyBraces": true,
+  "customWrappers": [
+    "!!"
+  ],
+  "customRegexPattern": ""
+}
